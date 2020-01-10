@@ -131,8 +131,8 @@ void Session::next( const UtcTimeStamp& timeStamp )
 {
   try
   {
-    if ( !checkSessionTime(timeStamp) )
-      { reset(); return; }
+    // if ( !checkSessionTime(timeStamp) )
+    //  { reset(); return; }
 
     if( !isEnabled() || !isLogonTime(timeStamp) )
     {
